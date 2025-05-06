@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/vkf1vit.css">
+
+    <script src="https://kit.fontawesome.com/985d18d620.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Hongo Watch - Product Page</title>
+</head>
+
+<body class="mar-pad0 niveau" id="body-watch-product">
+    <header class="display-flex spc-btw navbar w100 items-center">
+        <img class="logo" src="./assets/images/logo.png" alt="logo">
+
+        <nav class="display-flex spc-btw items-center">
+            <ul class="ul-navbar display-flex mar-pad0" id="navMenu">
+                <li class="li-navbar"><a href="./index.html" class="color-gris-oscuro niveau em1 pos-relative">Home</a>
+                </li>
+                <li class="li-navbar"><a href="./gallery.html"
+                        class="color-gris-oscuro niveau em1 pos-relative">Shop</a></li>
+                <li class="li-navbar"><a href="./watch-product.html" class="color-gris-oscuro niveau em1">Product</a>
+                </li>
+                <li class="li-navbar"><a href="./size-guide.html"
+                        class="color-gris-oscuro niveau em1 pos-relative">SizeGuide</a></li>
+                <li class="li-navbar"><a href="./Shipping-and-delivery.html"
+                        class="color-gris-oscuro niveau em1 pos-relative">Shipping</a></li>
+                <li class="li-navbar"><a href="./store-locator.html"
+                        class="color-gris-oscuro niveau em1 pos-relative">Store Locator</a></li>
+                <li class="li-navbar"><a href="./contact-page.html"
+                        class="color-gris-oscuro niveau em1 pos-relative">Contact</a></li>
+            </ul>
+        </nav>
+
+        <ul class="ul-iconos display-flex">
+            <li class="fas li-iconos"><i class="fa-solid fa-magnifying-glass color-white"></i></li>
+            <li class="fas li-iconos"><i class="fa-solid fa-user color-white"></i></li>
+            <li class="fas li-iconos"><i class="fa-solid fa-heart color-white"></i></li>
+            <li class="fas li-iconos"><button onclick="carrito(0)" id="toggleCartButton"><i
+                        class="fa-solid fa-cart-shopping color-white"></i></button></li>
+        </ul>
+        <div class="menu-toggle" id="menuToggle">
+            <i class="fa-solid fa-bars color-white"></i>
+        </div>
+    </header>
+
+    <button onclick="toggleDarkMode()" class="dark-mode-toggle" id="darkModeToggle"><i
+            class="fa-solid fa-moon"></i></button>
+    <main class="container-product display-flex">
+        <section class="left-column-product display-flex spc-btw">
+            <div class="thumbnail-images-product display-flex">
+                <img alt="Watch image 1" src="./assets/images/products/foto1.jpg" class="w100 back-cover" />
+                <img alt="Watch image 2" src="./assets/images/products/foto2.jpg" class="w100 back-cover"
+                    style="width: auto;" />
+                <img alt="Watch image 3" src="./assets/images/products/foto3.webp" class="w100" />
+                <img alt="Watch image 4" src="./assets/images/products/foto4.jpg" class="w100" />
+            </div>
+        </section>
+
+        <section class="main-image-container-product">
+            <img alt="Main watch image" class="main-image-product w100" src="./assets/images/products/foto1.jpg" />
+        </section>
+
+        <aside class="right-column-product display-flex spc-btw">
+            <nav class="breadcrumb-product niveau color-gris">
+                <a href="#" class="niveau color-gris-oscuro">Home> </a>
+                <a href="#" class="niveau color-gris-oscuro">Product Style > </a>
+                <a href="#" class="niveau color-gris-oscuro">Classic Product</a>
+            </nav>
+
+            <article class="product-details-product">
+                <h1 class="product-title-product niveau color-gris-oscuro">Classic Product</h1>
+                <p class="product-price-product color-gris-oscuro niveau">£209.00 – £249.00</p>
+                <p class="product-sku-product niveau color-gris">SKU: 492260</p>
+                <p class="product-description-product niveau color-gris">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    standard dummy text. Lorem Ipsum is simply dummy text of the printing.
+                </p>
+            </article>
+
+            <section class="product-options-product">
+                <label for="color-options niveau color-gris">COLOR</label>
+                <div id="color-options" class="color-options-product">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+
+                <label for="size-options">SIZE</label>
+                <div id="size-options" class="size-options-product">
+                    <span class="niveau color-gris-oscuro">39MM</span>
+                    <span class="niveau color-gris-oscuro">40MM</span>
+                    <span class="niveau color-gris-oscuro">41MM</span>
+                    <a href="#" class="niveau color-gris em08">SIZE GUIDE</a>
+                </div>
+            </section>
+
+            <div class="product-quantity-product display-flex">
+                <button>-</button>
+                <input type="text" value="1" />
+                <button>+</button>
+            </div>
+
+            <a class="add-to-cart-product niveau" href="#">ADD TO CART</a>
+
+
+        </aside>
+    </main>
+
+
+    <main class="main-imagen-product display-flex">
+        <nav class="nav-imagen-product display-flex">
+            <a class="tab-link active niveau" data-tab="description">DESCRIPTION</a>
+            <a class="tab-link niveau" data-tab="additional-info">ADDITIONAL INFORMATION</a>
+            <a class="tab-link niveau" data-tab="reviews">REVIEWS (1)</a>
+        </nav>
+        <section class="content-imagen-product display-flex">
+            <article class="text-content-imagen-product">
+                <div class="content-section-imagen-product active niveau" id="description">
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the industry's standard dummy text ever since.</p>
+                    <h2>01. Matte gunmetal stainless steel link</h2>
+                    <p>Any agreement with should have strong verification and enforcement safeguards to prevent future
+                        cheating. Lorem Ipsum is simply dummy text of industry</p>
+                    <h2>02. Brushed taupe stainless steel</h2>
+                    <p>Any agreement with should have strong verification and enforcement safeguards to prevent future
+                        cheating. Lorem Ipsum is simply dummy text of industry</p>
+                    <h2>03. Gunmetal hands and black markers</h2>
+                    <p>Any agreement with should have strong verification and enforcement safeguards to prevent future
+                        cheating. Lorem Ipsum is simply dummy text of industry</p>
+                </div>
+                <div class="content-section-imagen-product niveau" id="additional-info">
+                    <table>
+                        <tr>
+                            <th>Feature</th>
+                            <th>Description</th>
+                        </tr>
+                        <tr>
+                            <td>Material</td>
+                            <td>Stainless Steel</td>
+                        </tr>
+                        <tr>
+                            <td>Color</td>
+                            <td>Gunmetal</td>
+                        </tr>
+                        <tr>
+                            <td>Water Resistance</td>
+                            <td>50 meters</td>
+                        </tr>
+                        <tr>
+                            <td>Warranty</td>
+                            <td>2 years</td>
+                        </tr>
+                    </table>
+                </div>
+                <div class="content-section-imagen-product niveau" id="reviews">
+                    <h2>Add a review</h2>
+                    <div class="review-form">
+                        <label for="name">Name *</label>
+                        <input type="text" id="name" required>
+
+                        <label for="email">Email *</label>
+                        <input type="email" id="email" required>
+
+                        <p>Your rating</p>
+                        <div class="stars">
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                            <span>&#9733;</span>
+                        </div>
+
+                        <label for="review">Your review *</label>
+                        <textarea id="review" rows="5" required></textarea>
+
+                        <button class="submit-btn">SUBMIT</button>
+                    </div>
+                </div>
+            </article>
+            <figure class="image-content-imagen-product display-flex">
+                <img src="./assets/images/products/foto1.jpg"
+                    alt="A black matte watch with a stainless steel link and gunmetal hands and black markers">
+            </figure>
+        </section>
+    </main>
+
+
+
+    <footer class="display-flex pos-relative">
+        <div class="footer-container display-grid">
+            <article class="footer-articles">
+                <h5 class="niveau rem1 color-white">About Company overview</h5>
+                <p class="rem1 color-gris niveau">
+                    Big clothes brand hongo. Lorem Ipsum is
+                    simply dummy text of the printing
+                    and typesetting industry lorem ipsum.
+                </p>
+            </article>
+            <article class="footer-articles">
+                <h5 class="rem1 niveau color-white">Categories</h5>
+                <ul>
+                    <li><a href="" class="rem1 color-gris niveau">Women collection</a></li>
+                    <li><a href="" class="rem1 color-gris niveau">Men collection</a></li>
+                    <li><a href="" class="rem1 color-gris niveau">Child collection</a></li>
+                    <li><a href="" class="rem1 color-gris niveau">Accessories</a></li>
+                    <li><a href="" class="rem1 color-gris niveau">Watch straps</a></li>
+                </ul>
+            </article>
+            <article class="footer-articles">
+                <h5 class="rem1 niveau color-white">Customer</h5>
+                <ul>
+                    <li><a href="" class="rem1 color-gris niveau">Help and support</a></li>
+                    <li><a href="" class="rem1 color-gris niveau">Shipping and delivery</a></li>
+                    <li><a href="" class="rem1 color-gris niveau">Payment method</a></li>
+                    <li><a href="" class="rem1 color-gris niveau">Terms and condition</a></li>
+                    <li><a href="" class="rem1 color-gris niveau">Privacy policy</a></li>
+                </ul>
+            </article>
+            <article class="footer-articles">
+                <h5 class="rem1 niveau color-white">Store contact info</h5>
+                <ul>
+                    <li><a href="" class="rem1 color-gris niveau"><i class="fa-solid fa-phone"></i> Phone: +
+                            12323123</a></li>
+                    <li><a href="" class="rem1 color-gris niveau"><i class="fa-solid fa-fax"></i> Fax: + 1233131</a>
+                    </li>
+                    <li><a href="" class="rem1 color-gris niveau"><i
+                                class="fa-solid fa-envelope"></i>info@domain.com</a></li>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </ul>
+            </article>
+            <article class="footer-articles">
+                <h5 class="rem1 niveau color-white">Subscribe to our newsletter</h5>
+                <p class="rem1 color-gris niveau">Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry.</p>
+                <form class="display-flex items-center">
+                    <input type="email" id="email" name="email" placeholder="Enter your email...">
+                    <button type="submit">Subscribe</button>
+                </form>
+                <p>©️ 2024 HONGO. All rights reserved.</p>
+                </p>
+            </article>
+        </div>
+
+    </footer>
+</body>
+<script src="./assets/js/script.js"></script>
+
+</html>

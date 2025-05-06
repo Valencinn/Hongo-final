@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style-login.css">
+</head>
+<body style="height: 100vh;">
+    <div class="loginwrap">
+        <h1 class="login-title">Login</h1>
+        <form id="login-form" class="login-form">
+            <div class="input">
+                <label for="username">Username or email address <span class="required">*</span></label>
+                <input type="text" id="username" name="username">
+            </div>
+            <div class="input">
+                <label for="password">Password <span class="required">*</span></label>
+                <input type="password" id="password" name="password">
+                <button type="button" id="toggle-password" class="show-password-btn">Show Password</button>
+            </div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="remember-me" name="remember-me">
+                <label for="remember-me">Remember me</label>
+            </div>
+            <button type="submit" class="login-btn">LOG IN</button>
+            <p id="error-message" class="error-message">Incorrect username or password. Please try again.</p>
+            <a href="#" class="forgot-password">Lost your password?</a>
+        </form>
+    </div>
+    <script src="./assets/js/scriptLogIn.js"></script>
+</body>
+</html>

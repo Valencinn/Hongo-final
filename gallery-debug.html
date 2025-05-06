@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hongo Watch - Gallery</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/vkf1vit.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://kit.fontawesome.com/985d18d620.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="mar-pad0" style="background-color: white;">
+    <header class="display-flex spc-btw navbar w100 items-center">
+        <img class="logo" src="./assets/images/logo.png" alt="logo">
+        <nav class="display-flex spc-btw items-center ">
+            <ul class="ul-navbar display-flex mar-pad0">
+                <li class="li-navbar"><a href="./index.html" class="color-white niveau em1 pos-relative">Home</a>
+                </li>
+                <li class="li-navbar"><a href="./gallery.html" class="color-white niveau em1 pos-relative">Shop</a>
+                </li>
+                <li class="li-navbar"><a href="./watch-product.html" class="color-white niveau em1">Product</a>
+                </li>
+                <li class="li-navbar"><a href="./size-guide.html" class="color-white niveau em1 pos-relative">Size
+                        Guide</a></li>
+                <li class="li-navbar"><a href="./Shipping-and-delivery.html"
+                        class="color-white niveau em1 pos-relative">Shipping</a></li>
+                <li class="li-navbar"><a href="./store-locator.html" class="color-white niveau em1 pos-relative">Store
+                        Locator</a></li>
+                <li class="li-navbar"><a href="./contact-page.html"
+                        class="color-white niveau em1 pos-relative">Contact</a></li>
+            </ul>
+        </nav>
+        <ul class="ul-iconos display-flex">
+            <li class="fas li-iconos"><i class="fa-solid fa-magnifying-glass color-white"></i></li>
+            <li class="fas li-iconos"><i class="fa-regular fa-user color-white"></i></li>
+            <li class="fas li-iconos"><i class="fa-regular fa-heart color-white"></i></li>
+            <li class="fas li-iconos"><i class="fa-solid fa-cart-shopping color-white"></i></li>
+            <li><button onclick="toggleDarkMode()" class="dark-mode-toggle">
+                    <i class="fa-solid fa-moon"></i>
+                </button></li>
+        </ul>
+        <div class="menu-toggle">
+            <i class="fa-solid fa-bars color-white"></i>
+        </div>
+    </header>
+
+    <section class="home-comun display-flex flex-center w100 pos-relative" id="home-store-locator">
+        <div class="home-texto-comun flex-center display-flex">
+            <h2 class="niveau em2 color-white gallery-text">Shop Locator</h2>
+            <p class="niveau em1 color-gris gallery-text">worldwide fashion store</p>
+        </div>
+    </section>
+
+    <div class="breadcrumb">
+        <a href="#" class="niveau">Home</a>
+        |
+        <a href="#" class="niveau">Shop classic</a>
+    </div>
+
+    <div class="filter-toggle" onclick="toggleSidebar()"></div>
+
+    <section class="container-shop display-flex fl-wrap">
+        <article class="sidebar" id="sidebar">
+            <div class="filter-section">
+                <h3 class="niveau color-gris-oscuro">Filter by color</h3>
+                <ul>
+                    <li><label class="display-flex custom-checkbox myriad color-gris pos-relative"><input type="radio"
+                                name="color" value="red">Red</label></li>
+                    <li><label class="display-flex custom-checkbox myriad color-gris pos-relative"><input type="radio"
+                                name="color" value="black">Black</label></li>
+                    <li><label class="display-flex custom-checkbox myriad color-gris pos-relative"><input type="radio"
+                                name="color" value="green">Green</label></li>
+                    <li><label class="display-flex custom-checkbox myriad color-gris pos-relative"><input type="radio"
+                                name="color" value="blue">Blue</label></li>
+                    <li><label class="display-flex custom-checkbox myriad color-gris pos-relative"><input type="radio"
+                                name="color" value="silver">Silver</label></li>
+                    <li><label class="display-flex custom-checkbox myriad color-gris pos-relative"><input type="radio"
+                                name="color" value="rosegold">Rose Gold</label></li>
+                    <li><label class="display-flex custom-checkbox myriad color-gris pos-relative"><input type="radio"
+                                name="color" value="all"
+                                style="appearance: none; width: 20px; height: 20px; border: 2px solid #000; border-radius: 50%; background: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet); cursor: pointer;"
+                                onclick="resetGallery()">All</label></li>
+                </ul>
+            </div>
+            <div class="filter-section">
+                <h3 class="niveau color-gris-oscuro">Filter by size</h3>
+                <ul>
+                    <li><label class="myriad color-gris"><input type="radio">39MM (37)</label></li>
+                    <li><label class="myriad color-gris"><input type="radio">40MM (54)</label></li>
+                    <li><label class="myriad color-gris"><input type="radio">41MM (54)</label></li>
+                    <li><label class="myriad color-gris"><input type="radio">42MM (54)</label></li>
+                    <li><label class="myriad color-gris"><input type="radio">45MM (54)</label></li>
+                </ul>
+            </div>
+
+            <div class="filter-section">
+                <h1>Price Range:</h1>
+                <p>Move Slider to choose the price range.</p>
+
+                <div class="min-max">
+                    <div class="min">
+                        <label>Min</label><span id="min-value"></span>
+                    </div>
+                    <div class="max">
+                        <label>Max</label><span id="max-value"></span>
+                    </div>
+                </div>
+
+                <div class="min-max-range">
+                    <input type="range" min="0" max="7000" value="0" class="range" id="min">
+                    <input type="range" min="1000" max="7000" value="7000" class="range" id="max">
+                </div>
+
+                <div style="clear: both;"></div>
+            </div>
+
+            <div class="filter-section">
+                <h1>Star Rating Filter</h1>
+                <div class="stars-filter" id="starFilter">
+                    <span data-value="5">★</span>
+                    <span data-value="4">★</span>
+                    <span data-value="3">★</span>
+                    <span data-value="2">★</span>
+                    <span data-value="1">★</span>
+                </div>
+            </div>
+
+            <div class="items-container">
+                <div class="item" data-stars="5">
+                    <span class="item-title">Item 1</span> - ★★★★★
+                </div>
+                <div class="item" data-stars="4">
+                    <span class="item-title">Item 2</span> - ★★★★☆
+                </div>
+                <div class="item" data-stars="3">
+                    <span class="item-title">Item 3</span> - ★★★☆☆
+                </div>
+                <div class="item" data-stars="2">
+                    <span class="item-title">Item 4</span> - ★★☆☆☆
+                </div>
+                <div class="item" data-stars="1">
+                    <span class="item-title">Item 5</span> - ★☆☆☆☆
+                </div>
+            </div>
+        </article>
+
+        <article class="content-shop-gallery">
+            <div class="sorting">
+                <div class="left">
+                    <div class="column-buttons">
+                        <button onclick="changeColumns(2)">2</button>
+                        <button onclick="changeColumns(3)">3</button>
+                        <button onclick="changeColumns(4)">4</button>
+                    </div>
+                </div>
+
+                <select>
+                    <option>Default Sorting</option>
+                </select>
+            </div>
+
+            <div class="product-grid display-grid" id="productGrid">
+
+            </div>
+        </article>
+    </section>
+
+    <footer class="display-flex pos-relative">
+        <div class="footer-container display-grid">
+            <article class="footer-articles">
+                <h5 class="niveau rem1 color-white">About Company overview</h5>
+                <p class="rem1 color-gris niveau">
+                    Big clothes brand hongo. Lorem Ipsum is
+                    simply dummy text of the printing
+                    and typesetting industry lorem ipsum.
+                </p>
+            </article>
+            <article class="footer-articles">
+                <h5 class="rem1 niveau color-white">Categories</h5>
+                <ul>
+                    <li><a href="" class="rem1 color-gris niveau">Women collection</a></li>
+                    <li><a href="" class="rem1 color-gris niveau">Men collection</a></li>
+                    <li><a href="" class="rem1 color-gris niveau">Child collection</a></li>
+                    <li><a href="" class="rem1 color-gris niveau">Accessories</a></li>
+                    <li><a href="" class="rem1 color-gris niveau">Watch straps</a></li>
+                </ul>
+            </article>
+            <article class="footer-articles">
+                <h5 class="rem1 niveau color-white">Customer</h5>
+                <ul>
+                    <li><a href="" class="rem1 color-gris niveau">Help and support</a></li>
+                    <li><a href="" class="rem1 color-gris niveau">Shipping and delivery</a></li>
+                    <li><a href="" class="rem1 color-gris niveau">Payment method</a></li>
+                    <li><a href="" class="rem1 color-gris niveau">Terms and condition</a></li>
+                    <li><a href="" class="rem1 color-gris niveau">Privacy policy</a></li>
+                </ul>
+            </article>
+            <article class="footer-articles">
+                <h5 class="rem1 niveau color-white">Store contact info</h5>
+                <ul>
+                    <li><a href="" class="rem1 color-gris niveau"><i class="fa-solid fa-phone"></i> Phone: +
+                            12323123</a></li>
+                    <li><a href="" class="rem1 color-gris niveau"><i class="fa-solid fa-fax"></i> Fax: + 1233131</a>
+                    </li>
+                    <li><a href="" class="rem1 color-gris niveau"><i
+                                class="fa-solid fa-envelope"></i>info@domain.com</a></li>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </ul>
+            </article>
+            <article class="footer-articles">
+                <h5 class="rem1 niveau color-white">Subscribe to our newsletter</h5>
+                <p class="rem1 color-gris niveau">Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry.</p>
+                <form class="display-flex items-center">
+                    <input type="email" id="email" name="email" placeholder="Enter your email...">
+                    <button type="submit">Subscribe</button>
+                </form>
+                <p>©️ 2024 HONGO. All rights reserved.</p>
+                </p>
+            </article>
+        </div>
+
+    </footer>
+    <script src="./assets/js/script.js">
+    </script>
+
+</body>
+
+</html>

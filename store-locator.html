@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hongo Watch - Store Locator Page</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ramabhadra&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.typekit.net/vkf1vit.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="https://kit.fontawesome.com/985d18d620.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="mar-pad0" id="body-store-locator">
+    <header class="display-flex spc-btw navbar w100 items-center">
+        <img class="logo" src="./assets/images/logo.png" alt="logo">
+
+        <nav class="display-flex spc-btw items-center">
+            <ul class="ul-navbar display-flex mar-pad0" id="navMenu">
+                <li class="li-navbar"><a href="./index.html" class="color-white niveau em1 pos-relative">Home</a></li>
+                <li class="li-navbar"><a href="./gallery.html" class="color-white niveau em1 pos-relative">Shop</a></li>
+                <li class="li-navbar"><a href="./watch-product.html" class="color-white niveau em1">Product</a></li>
+                <li class="li-navbar"><a href="./size-guide.html"
+                        class="color-white niveau em1 pos-relative">SizeGuide</a></li>
+                <li class="li-navbar"><a href="./Shipping-and-delivery.html"
+                        class="color-white niveau em1 pos-relative">Shipping</a></li>
+                <li class="li-navbar"><a href="./store-locator.html" class="color-white niveau em1 pos-relative">Store
+                        Locator</a></li>
+                <li class="li-navbar"><a href="./contact-page.html"
+                        class="color-white niveau em1 pos-relative">Contact</a></li>
+            </ul>
+        </nav>
+
+        <ul class="ul-iconos display-flex">
+            <li class="fas li-iconos"><i class="fa-solid fa-magnifying-glass color-white"></i></li>
+            <li class="fas li-iconos"><i class="fa-solid fa-user color-white"></i></li>
+            <li class="fas li-iconos"><i class="fa-solid fa-heart color-white"></i></li>
+            <li class="fas li-iconos"><button onclick="carrito()" id="toggleCartButton"><i
+                        class="fa-solid fa-cart-shopping color-white"></i></button></li>
+        </ul>
+        <div class="menu-toggle" id="menuToggle">
+            <i class="fa-solid fa-bars color-white"></i>
+        </div>
+    </header>
+
+    <button onclick="toggleDarkMode()" class="dark-mode-toggle" id="darkModeToggle"><i
+            class="fa-solid fa-moon"></i></button>
+
+
+    <section class="home-comun display-flex flex-center w100 pos-relative" id="home-store-locator">
+        <div class="home-texto-comun flex-center display-flex">
+            <h2 class="niveau em2 color-white gallery-text">Store Locator</h2>
+            <p class="niveau em1 color-gris gallery-text">worldwide fashion store</p>
+        </div>
+    </section>
+
+    <section class="store-locator-stores display-grid">
+        <div class="left-number-locator">
+            <h1 class="em4 niveau mar-pad0 pos-absolute">2780</h1>
+            <p class="em1 color-black niveau mar-pad0">MORE THAN 2780 WORLDWIDE STORE</p>
+        </div>
+        <div class="right-text-locator">
+            <p class="em2 color-gris niveau mar-pad0">Your premium brand had better be delivering something
+                special or it's not going to get the business</p>
+        </div>
+    </section>
+
+    <section class="store-locator-mapa display-flex">
+        <div class="imagen-mapa-store-locator display-flex w100">
+            <p class="niveau em2 color-gris-oscuro flex-center">Worldwide all hongo fashion store locations</p>
+        </div>
+    </section>
+
+
+
+    <div id="paises-card-background display-flex">
+        <div class="div-btn-store display-flex flex-center items-center w100">
+            <button class="btn-store-locator"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+        <section class="container-store-locator">
+            <article class="card-store-locator">
+                <img class="w100" alt="Woman holding a blue dress in a fashion store"
+                    src="./assets/images/Store-locator/fashion-store-locator-02-1.jpg" />
+                <div class="card-content-store-locator">
+                    <h3 class="mar-pad0 display-flex flex-center niveau em1">
+                        <img alt="Australia flag" src="./assets/images/Store-locator/australia.png" />
+                        AUSTRALIA
+                    </h3>
+                    <p class="niveau color-grgis rem1">301 Greenhouse, Custard fashion factory, Prospect drive,
+                        Australia</p>
+                    <div class="contact-info-store-locator">
+                        <p class="niveau color-gris rem1">Phone: +44 12345 67890</p>
+                        <p class="niveau color-gris rem1">Email: info@hongo.com</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card-store-locator">
+                <img class="w100" alt="Clothes hanging on a rack in a fashion store"
+                    src="./assets/images/Store-locator/fashion-store-locator-02-1.jpg" />
+                <div class="card-content-store-locator">
+                    <h3 class="mar-pad0 display-flex flex-center niveau em1">
+                        <img alt="Switzerland flag"
+                            src="https://storage.googleapis.com/a1aa/image/dbK8b4OeruxdCqBHHZ7APZLyJ8eQgeRiTAszlwSsoTP8qqZnA.jpg" />
+                        SWITZERLAND
+                    </h3>
+                    <p class="niveau color-gris rem1">Maria Reichenbach, Green Hill Drive, Zürich 8022, Switzerland</p>
+                    <div class="contact-info-store-locator">
+                        <p class="niveau color-gris rem1">Phone: +44 12345 67890</p>
+                        <p class="niveau color-gris rem1">Email: info@hongo.com</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card-store-locator">
+                <img class="w100" alt="Woman arranging clothes in a fashion store"
+                    src="./assets/images/Store-locator/fashion-store-locator-02-1.jpg" />
+                <div class="card-content-store-locator">
+                    <h3 class="mar-pad0 display-flex flex-center niveau em1">
+                        <img alt="Iceland flag"
+                            src="https://storage.googleapis.com/a1aa/image/weAxc3lM50QBaq8rzfIyHSOB7rf9qkbRONWrYagCXeArVVzOB.jpg" />
+                        ICELAND
+                    </h3>
+                    <p class="niveau color-gris rem1">401 Broadway, 24th Floor, Glenwood Lane, North Brunswick, Iceland
+                    </p>
+                    <div class="contact-info-store-locator">
+                        <p class="niveau color-gris rem1">Phone: +44 12345 67890</p>
+                        <p class="niveau color-gris rem1">Email: info@hongo.com</p>
+                    </div>
+                </div>
+            </article>
+
+            <article class="card-store-locator">
+                <img class="w100" alt="Man holding a coffee cup in a fashion store"
+                    src="./assets/images/Store-locator/fashion-store-locator-02-1.jpg" />
+                <div class="card-content-store-locator">
+                    <h3 class="mar-pad0 display-flex flex-center niveau em1">
+                        <img alt="France flag" src="./assets/images/Store-locator/francia.png" />
+                        FRANCE
+                    </h3>
+                    <p class="niveau color-gris rem1">West 14th North Street, Hamilton Lane, Suite 21, Netherlands</p>
+                    <div class="contact-info-store-locator">
+                        <p class="niveau color-gris rem1">Phone: +44 12345 67890</p>
+                        <p class="niveau color-gris rem1">Email: info@hongo.com</p>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </div>
+
+    <div class="display-flex ">
+        <section class="store-locator-stores display-grid">
+            <div class="left-number-locator">
+                <h1 class="em1 niveau mar-pad0 color-dorado pos-absolute">STYLE LIFE IS SHORT</h1>
+                <p class="em2 niveau mar-pad0 color-gris-oscuro">A classic never goes out of style life is short, make
+                    every outfit count fashion is just another accessory for someone with great style</p>
+            </div>
+            <div class="right-text-locator">
+                <p class="em1 niveau mar-pad0 color-gris-oscuro">Lorem Ipsum is simply dummy text of the printing and
+                    typesetting industry. Lorem Ipsum been the industry’s standard dummy text ever since the when an
+                    unknown printer took a galley of type and scrambled it to make a type specimen book. Lorem Ipsum is
+                    simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry’s
+                    standard dummy text ever since the when an unknown.</p>
+            </div>
+        </section>
+    </div>
+
+
+    <section class="banner4-fotos display-grid">
+        <article class="display-flex">
+            <div>
+                <h3 class="niveau em08 color-white">NEW OPEN THE STORE</h3>
+                <p class="niveau em2 color-white">Come and join celebrate our store grand opening!</p>
+                <button class="niveau em08 color-white btn-store">LET'S CELEBRATE NOW</button>
+            </div>
+        </article>
+        <article class="back-cover"></article>
+        <article class="display-flex flex-center">
+
+            <article class="text-section-shipping">
+                <h2 class="niveau em05 color-white mar-pad0">Fashion shop feelings and relax day enjoy weekend!</h2>
+                <ul class="mar-pad0 niveau">
+                    <li class="display-flex em08 color-gris">
+                        <i class="fas fa-check pos-relative"></i>
+                        Dress like you’re already famous
+                    </li>
+                    <li class="display-flex em08 color-gris">
+                        <i class="fas fa-check pos-relative"></i>
+                        Life is short, make every outfit count
+                    </li>
+                    <li class="display-flex em08 color-gris">
+                        <i class="fas fa-check pos-relative"></i>
+                        Fashion feeds me more than food!
+                    </li>
+                    <li class="display-flex em08 color-gris">
+                        <i class="fas fa-check pos-relative"></i>
+                        Dress how you want to be addressed
+                    </li>
+                    <li class="display-flex em08 color-gris">
+                        <i class="fas fa-check pos-relative"></i>
+                        Life is too short to wear boring clothes
+                    </li>
+                </ul>
+            </article>
+        </article>
+        <article class="back-cover"></article>
+    </section>
+
+
+    <section class="features-shipping display-flex">
+        <article class="feature-item-shipping">
+            <i class="fas fa-shopping-bag em4 color-dorado"></i>
+            <h3 class="niveau color-gris-oscuro em1">Free deliver all time</h3>
+            <p class="niveau color-gris rem1">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum standard dummy text.</p>
+        </article>
+        <article class="feature-item-shipping">
+            <i class="fas fa-shopping-bag em4 color-dorado"></i>
+            <h3 class="niveau color-gris-oscuro em1">Free deliver all time</h3>
+            <p class="niveau color-gris rem1">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum standard dummy text.</p>
+        </article>
+        <article class="feature-item-shipping">
+            <i class="fas fa-shopping-bag em4 color-dorado"></i>
+            <h3 class="niveau color-gris-oscuro em1">Free deliver all time</h3>
+            <p class="niveau color-gris rem1">Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                Lorem Ipsum standard dummy text.</p>
+        </article>
+    </section>
+
+    <section class="store-locator-store-cards display-flex fl-wrap">
+        <article class="store-locator-store-card display-flex myriad w100">
+            <img src="./assets/images/Store-locator/fashion-store-locator-09.jpg" alt="">
+            <div class="store-locator-store-card-content display-flex">
+                <div class="sale-badge">50% OFF SALE</div>
+                <h3>Opening new hongo store in <a href="">Australia</a></h3>
+                <p class="color-gris">301 Greenhouse, Custard Factory, Australia, E2 8DY</p>
+                <a href="" class="location-button myriad em08">LOCATION</a>
+            </div>
+        </article>
+        <article class="store-locator-store-card display-flex myriad w100">
+            <img src="./assets/images/Store-locator/fashion-store-locator-09.jpg" alt="">
+            <div class="store-locator-store-card-content display-flex">
+                <div class="sale-badge">50% OFF SALE</div>
+                <h3>Opening new hongo store in <a href="">Australia</a></h3>
+                <p class="color-gris">301 Greenhouse, Custard Factory, Australia, E2 8DY</p>
+                <a href="" class="location-button myriad em08">LOCATION</a>
+            </div>
+        </article>
+        <article class="store-locator-store-card display-flex myriad w100">
+            <img src="./assets/images/Store-locator/fashion-store-locator-09.jpg" alt="">
+            <div class="store-locator-store-card-content display-flex">
+                <div class="sale-badge">50% OFF SALE</div>
+                <h3>Opening new hongo store in <a href="">Australia</a></h3>
+                <p class="color-gris">301 Greenhouse, Custard Factory, Australia, E2 8DY</p>
+                <a href="" class="location-button myriad em08">LOCATION</a>
+            </div>
+        </article>
+    </section>
+
+    <section class="five-icons-foot display-flex flex-center">
+        <div class="icon-grid display-flex">
+            <div class="icon-item flex-center">
+                <img src="./assets/images/logos-store-locator.webp" alt="">
+            </div>
+            <div class="icon-item flex-center">
+                <img src="./assets/images/logos-store-locator.webp" alt="">
+            </div>
+            <div class="icon-item flex-center">
+                <img src="./assets/images/logos-store-locator.webp" alt="">
+            </div>
+            <div class="icon-item flex-center">
+                <img src="./assets/images/logos-store-locator.webp" alt="">
+            </div>
+            <div class="icon-item flex-center">
+                <img src="./assets/images/logos-store-locator.webp" alt="">
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="display-flex pos-relative">
+        <div class="footer-container display-grid">
+            <article class="footer-articles">
+                <h5 class="niveau rem1 color-white">About Company overview</h5>
+                <p class="rem1 color-gris niveau">Big clothes brand hongo. Lorem Ipsum is simply dummy text of the
+                    printing and typesetting industry lorem ipsum.</p>
+            </article>
+            <article class="footer-articles">
+                <h5 class="rem1 niveau color-white">Categories</h5>
+                <ul>
+                    <li><a href="" class="rem1 color-gris niveau">Women collection</a></li>
+                    <li><a href="" class="rem1 color-gris niveau">Men collection</a></li>
+                    <li><a href="" class="rem1 color-gris niveau">Child collection</a></li>
+                    <li><a href="" class="rem1 color-gris niveau">Accessories</a></li>
+                    <li><a href="" class="rem1 color-gris niveau">Watch straps</a></li>
+                </ul>
+            </article>
+            <article class="footer-articles">
+                <h5 class="rem1 niveau color-white">Customer</h5>
+                <ul>
+                    <li><a href="" class="rem1 color-gris niveau">Help and support</a></li>
+                    <li><a href="" class="rem1 color-gris niveau">Shipping and delivery</a></li>
+                    <li><a href="" class="rem1 color-gris niveau">Payment method</a></li>
+                    <li><a href="" class="rem1 color-gris niveau">Terms and condition</a></li>
+                    <li><a href="" class="rem1 color-gris niveau">Privacy policy</a></li>
+                </ul>
+            </article>
+            <article class="footer-articles">
+                <h5 class="rem1 niveau color-white">Store contact info</h5>
+                <ul>
+                    <li><a href="" class="rem1 color-gris niveau"><i class="fa-solid fa-phone"></i> Phone: +
+                            12323123</a></li>
+                    <li><a href="" class="rem1 color-gris niveau"><i class="fa-solid fa-fax"></i> Fax: + 1233131</a>
+                    </li>
+                    <li><a href="" class="rem1 color-gris niveau"><i
+                                class="fa-solid fa-envelope"></i>info@domain.com</a></li>
+                    <ul>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </ul>
+            </article>
+            <article class="footer-articles">
+                <h5 class="rem1 niveau color-white">Subscribe to our newsletter</h5>
+                <p class="rem1 color-gris niveau">Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry.</p>
+                <form class="display-flex items-center">
+                    <input type="email" id="email" name="email" placeholder="Enter your email...">
+                    <button type="submit">Subscribe</button>
+                </form>
+                <p>©️ 2024 HONGO. All rights reserved.</p>
+                </p>
+            </article>
+        </div>
+
+    </footer>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
