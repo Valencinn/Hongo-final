@@ -497,7 +497,7 @@ let currentLoadedProducts = 4;
 function cargarGaleria() {
     const gallery4Container = document.getElementById('gallery4Container');
     gallery4Container.innerHTML = '';
-    
+
     productos.slice(0, currentLoadedProducts).forEach((producto, index) => {
         const sectionProducto = document.createElement('section');
         
