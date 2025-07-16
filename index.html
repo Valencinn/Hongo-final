@@ -20,7 +20,7 @@
 </head>
 
 <body class="mar-pad0">
-    <header class="display-flex spc-btw navbar w100 items-center">
+    <header class="display-flex spc-btw navbar w100 items-center ps-fixed">
         <img class="logo" src="./assets/images/logo.png" alt="logo">
 
         <nav class="display-flex spc-btw items-center">
@@ -53,8 +53,8 @@
 
 
     <!--HOME-->
-    <section class="home display-flex items-center" id="homeSection"></section>
-    <div class="carousel-buttons display-flex">
+    <section class="home display-flex items-center fl-row" id="homeSection"></section>
+    <div class="carousel-buttons display-flex fl-column ps-absolute">
         <button onclick="cambiarReloj(0)" class="niveau">1</button>
         <button onclick="cambiarReloj(1)" class="niveau">2</button>
         <button onclick="cambiarReloj(2)" class="niveau">3</button>
@@ -62,11 +62,11 @@
     <!--HOME-->
 
 
-    <a class="scrollup niveau" href="#">SCROLL UP<i class="fa-solid fa-arrow-down"></i></a>
-    <button onclick="toggleDarkMode()" class="dark-mode-toggle" id="darkModeToggle"><i
+    <a class="scrollup niveau ps-fixed" href="#">SCROLL UP<i class="fa-solid fa-arrow-down"></i></a>
+    <button onclick="toggleDarkMode()" class="dark-mode-toggle ps-fixed" id="darkModeToggle"><i
             class="fa-solid fa-moon"></i></button>
 
-    <section class="masData-index flex-center display-flex">
+    <section class="masData-index flex-center display-flex fl-wrap background-dorado">
         <article class="intermedio-index flex-center display-flex">
             <p class="niveau color-gris em08"> <i class="fa-solid fa-globe"></i> WORLDWIDE SHIPPING</p>
         </article>
@@ -85,7 +85,7 @@
     <article id="fotosBannerContainer" class="background-dorado"></article>
 
     <!--GALLERY-->
-    <article class="gallery flex-center display-grid zonablanca background-dorado">
+    <article class="gallery flex-center display-grid background-dorado pad100 fl-column">
         <h1 class="flex-center niveau em2 mar-pad0">Feature Products</h1>
         <h3 class="flex-center niveau em1 color-gris mar">Elegance is an attitude longines</h3>
         <section class="contenedor-gallery display-grid data-theme"></section>
@@ -121,8 +121,8 @@
 
     <!--BLOGS-->
     <section class="banner display-flex">
-        <div id="off70" class="back-cover flex-center display-flex w100">
-            <div class="flex-center display-flex">
+        <div id="off70" class="back-cover flex-center display-flex w100 fl-column">
+            <div class="flex-center display-flex fl-column">
                 <h2 class="niveau color-gris em08">MEN'S WATCHES COLLECTION</h2>
                 <p class="color-white niveau em2">Best discounts</p>
                 <p class="color-white niveau em2">Flat 70% off</p>
@@ -131,7 +131,7 @@
         </div>
     </section>
 
-    <section class="masData-index flex-center display-flex bk-negro">
+    <section class="masData-index flex-center display-flex bk-negro fl-wrap">
         <article class="intermedio-index flex-center display-flex color-white">
             <p class="niveau em08"> <i class="fa-solid fa-globe"></i> WORLDWIDE SHIPPONG</p>
         </article>
@@ -155,7 +155,7 @@
     <section class="blogs display-flex spc-btw fl-wrap">
         <section id="container" class="display-flex fl-wrap">
             <article class="blog bk-white">
-                <img src="./assets/images/blog 1.jpg" alt="Stylish Watch" class="w100">
+                <img src="./assets/images/blog 1.jpg" alt="Stylish Watch" class="w100 h-auto">
                 <div class="blog-content">
                     <h3 class="niveau em1">Design is how you make your first impression with your consumers</h3>
                     <p class="niveau rem1 color-gris-oscuro">Let the beauty of what you love be what you do.Lorem Ipsum
@@ -169,7 +169,7 @@
                 </div>
             </article>
             <article class="blog bk-white">
-                <img src="./assets/images/blog 1.jpg" alt="Stylish Watch" class="w100">
+                <img src="./assets/images/blog 1.jpg" alt="Stylish Watch" class="w100 h-auto">
                 <div class="blog-content">
                     <h3 class="niveau em1">Design is how you make your first impression with your consumers</h3>
                     <p class="niveau rem1 color-gris-oscuro">Let the beauty of what you love be what you do.Lorem Ipsum
@@ -183,7 +183,7 @@
                 </div>
             </article>
             <article class="blog bk-white">
-                <img src="./assets/images/blog 1.jpg" alt="Stylish Watch" class="w100">
+                <img src="./assets/images/blog 1.jpg" alt="Stylish Watch" class="w100 h-auto">
                 <div class="blog-content">
                     <h3 class="niveau em1">Design is how you make your first impression with your consumers</h3>
                     <p class="niveau rem1 color-gris-oscuro">Let the beauty of what you love be what you do.Lorem Ipsum
@@ -197,7 +197,7 @@
                 </div>
             </article>
             <article class="blog bk-white">
-                <img src="./assets/images/blog 1.jpg" alt="Stylish Watch" class="w100">
+                <img src="./assets/images/blog 1.jpg" alt="Stylish Watch" class="w100 h-auto">
                 <div class="blog-content">
                     <h3 class="niveau em1">Design is how you make your first impression with your consumers</h3>
                     <p class="niveau rem1 color-gris-oscuro">Let the beauty of what you love be what you do.Lorem Ipsum
@@ -213,11 +213,11 @@
         </section>
     </section>
 
-    <div id="cart-container" class="cart-container">
+    <div id="cart-container" class="cart-container ps-fixed">
         <h4>Cart</h4>
         <ul id="carro"></ul>
         <p>Subtotal: $<b id="subtotal">0.00</b></p>
-        <button class="btn-buy">Purchase</button>
+        <button class="btn-buy w100">Purchase</button>
     </div>
 
     <footer class="display-flex pos-relative">

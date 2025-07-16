@@ -15,7 +15,7 @@
 </head>
 
 <body class="mar-pad0 niveau" id="body-watch-product">
-    <header class="display-flex spc-btw navbar w100 items-center">
+    <header class="display-flex spc-btw navbar w100 items-center ps-fixed">
         <img class="logo" src="./assets/images/logo.png" alt="logo">
 
         <nav class="display-flex spc-btw items-center">
@@ -49,11 +49,11 @@
         </div>
     </header>
 
-    <button onclick="toggleDarkMode()" class="dark-mode-toggle" id="darkModeToggle"><i
+    <button onclick="toggleDarkMode()" class="dark-mode-toggle ps-fixed" id="darkModeToggle"><i
             class="fa-solid fa-moon"></i></button>
     <main class="container-product display-flex">
-        <section class="left-column-product display-flex spc-btw">
-            <div class="thumbnail-images-product display-flex">
+        <section class="left-column-product display-flex spc-btw fl-column">
+            <div class="thumbnail-images-product display-flex h100 fl-column">
                 <img alt="Watch image 1" src="./assets/images/products/foto1.jpg" class="w100 back-cover" />
                 <img alt="Watch image 2" src="./assets/images/products/foto2.jpg" class="w100 back-cover"
                     style="width: auto;" />
@@ -63,10 +63,10 @@
         </section>
 
         <section class="main-image-container-product">
-            <img alt="Main watch image" class="main-image-product w100" src="./assets/images/products/foto1.jpg" />
+            <img alt="Main watch image" class="main-image-product w100 h100" src="./assets/images/products/foto1.jpg" />
         </section>
 
-        <aside class="right-column-product display-flex spc-btw">
+        <aside class="right-column-product display-flex spc-btw fl-column">
             <nav class="breadcrumb-product niveau color-gris">
                 <a href="#" class="niveau color-gris-oscuro">Home> </a>
                 <a href="#" class="niveau color-gris-oscuro">Product Style > </a>
@@ -93,8 +93,8 @@
                     <span></span>
                 </div>
 
-                <label for="size-options">SIZE</label>
-                <div id="size-options" class="size-options-product">
+                <label for="size-options" class="niveau">SIZE</label>
+                <div id="size-options" class="size-options-product niveau">
                     <span class="niveau color-gris-oscuro">39MM</span>
                     <span class="niveau color-gris-oscuro">40MM</span>
                     <span class="niveau color-gris-oscuro">41MM</span>
@@ -102,7 +102,7 @@
                 </div>
             </section>
 
-            <div class="product-quantity-product bk-white display-flex">
+            <div class="product-quantity-product bk-white display-flex niveau">
                 <button>-</button>
                 <input type="text" value="1" />
                 <button>+</button>
@@ -115,18 +115,18 @@
     </main>
 
 
-    <main class="main-imagen-product display-flex">
+    <main class="main-imagen-product display-flex fl-column">
         <nav class="nav-imagen-product display-flex">
             <a class="tab-link active niveau" data-tab="description">DESCRIPTION</a>
             <a class="tab-link niveau" data-tab="additional-info">ADDITIONAL INFORMATION</a>
             <a class="tab-link niveau" data-tab="reviews">REVIEWS (1)</a>
         </nav>
-        <section class="content-imagen-product display-flex">
+        <section class="content-imagen-product display-flex fl-column w100 niveau">
             <article class="text-content-imagen-product">
                 <div class="content-section-imagen-product active niveau" id="description">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                    <p class="niveau">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
                         the industry's standard dummy text ever since.</p>
-                    <h2>01. Matte gunmetal stainless steel link</h2>
+                    <h2 class="niveau">01. Matte gunmetal stainless steel link</h2>
                     <p>Any agreement with should have strong verification and enforcement safeguards to prevent future
                         cheating. Lorem Ipsum is simply dummy text of industry</p>
                     <h2>02. Brushed taupe stainless steel</h2>

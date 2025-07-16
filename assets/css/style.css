@@ -1,21 +1,17 @@
 .carousel-buttons {
-    position: absolute;
     top: 50%;
     right: 50px;
     transform: translateY(-50%);
-    flex-direction: column;
     gap: 10px;
 }
 
 .carousel-buttons button {
-    background-color: #cca47e;
     color: white;
     border: none;
     cursor: pointer;
     transition: background-color 0.3s;
     height: 30px;
     width: 30px;
-    border-radius: 5px;
 }
 
 .carousel-buttons button:hover {
@@ -34,6 +30,7 @@
     vertical-align: baseline;
 }
 
+/*---------------------COLORES BACKGROUND---------------------*/
 .bk-white {
     background-color: var(--bk-white)
 }
@@ -42,12 +39,36 @@
     background-color: var(--background-gray);
 }
 
+.background-dorado {
+    background-color: var(--background-dorado);
+}
+
+/*---------------------COLORES---------------------*/
+.color-white {
+    color: white;
+}
+
+.color-dorado {
+    color: #cca47e;
+}
+
+.color-gris {
+    color: var(--color-gris);
+}
+
+.color-gris-oscuro {
+    color: var(--color-gris-oscuro);
+}
+
+.color-black {
+    color: var(--color-black);
+}
+/*---------------------POSICION---------------------*/
 .flex-center {
     justify-content: center;
     text-align: center;
     align-items: center;
 }
-
 
 .text-left {
     text-align: left;
@@ -68,24 +89,27 @@
 .items-center {
     align-items: center;
 }
-
-.color-white {
-    color: white;
+/*---------------------TAMAÑOS---------------------*/
+.w100 {
+    width: 100%; 
 }
 
-.w100 {
-    width: 100%;
+.w50 {
+    width: 50%;
+}
+
+.h100 {
+    height: 100%;
 }
 
 .vh100 {
     height: 100vh;
 }
 
-
-.w50 {
-    width: 50%;
+.h-auto{
+    height: auto;
 }
-
+/*---------------------TIPOGRAFIAS---------------------*/
 .niveau {
     font-family: "niveau-grotesk", sans-serif;
     font-style: normal;
@@ -95,14 +119,7 @@
     font-family: "myriad-pro", sans-serif;
     font-style: normal;
 }
-
-.color-dorado {
-    color: #cca47e;
-}
-
-.background-dorado {
-    background-color: #f2ece5;
-}
+/*---------------------TAMAÑO LETRAS---------------------*/
 
 .rem1 {
     font-size: 1rem;
@@ -132,14 +149,6 @@
     font-size: 0.8em;
 }
 
-.color-gris {
-    color: var(--color-gris);
-}
-
-.color-gris-oscuro {
-    color: var(--color-gris-oscuro);
-}
-
 .back-cover {
     background-repeat: no-repeat;
     background-size: cover;
@@ -155,18 +164,29 @@
     flex-wrap: wrap;
 }
 
-.pos-absolute {
-    position: absolute;
-}
-
 .pos-relative {
     position: relative;
 }
 
-.color-black {
-    color: var(--color-black);
+.pad100{
+    padding: 100px;
 }
 
+.fl-column{
+    flex-direction: column;
+}
+
+.fl-row{
+    flex-direction: row;
+}
+
+.ps-fixed {
+    position: fixed;
+}
+
+.ps-absolute {
+    position: absolute;
+}
 /*---------------------ESTILOS GENERALES---------------------*/
 :root {
     --text-color: #232323;
@@ -178,6 +198,7 @@
     --color-gris: #808080;
     --color-black: rgb(0, 0, 0);
     --color-gris-oscuro: rgba(35, 35, 35, 0.7);
+    --background-dorado: #f2ece5;
     --navbar-bg: rgba(255, 255, 255, 0.9);
 }
 
@@ -189,15 +210,14 @@
     --color-gris: #ffffff;
     --bk-white: #121212;
     --secondary-color: #666666;
+    --background-dorado: #121212;
     --color-gris-oscuro: rgba(255, 255, 255, 0.7);
     --card-bg: #1e1e1e;
     --navbar-bg: rgba(0, 0, 0, 0.8);
 }
 
-
 /*---------------------SCROLL UP---------------------*/
 .scrollup {
-    position: fixed;
     writing-mode: vertical-lr;
     width: 50px;
     height: 100px;
@@ -211,7 +231,6 @@
     z-index: 99999999;
     text-decoration: none;
 }
-
 
 /*-----------------------------------------------*/
 html {
@@ -231,8 +250,6 @@ header {
 }
 
 .navbar {
-    position: fixed;
-    /*El elemento se coloca en relación a la ventana del navegador, no al elemento contenedor, y no se moverá al hacer scroll.*/
     top: 0;
     left: 0;
     z-index: 1000;
@@ -245,7 +262,7 @@ header {
     opacity: 0;
 }
 
-.color-black{
+.color-black {
     color: var(--color-black);
 }
 
@@ -275,7 +292,6 @@ header {
 .li-navbar a:hover {
     opacity: 0.6;
 }
-
 
 /* NAVBAR ANIMACIÓN */
 .navbar ul li a::before {
@@ -351,13 +367,11 @@ header {
     }
 }
 
-
 /*cartTab*/
 
 .cart-container {
     font-family: niveau-grotesk, sans-serif;
     display: none;
-    position: fixed;
     top: 70px;
     right: 20px;
     background: white;
@@ -403,7 +417,6 @@ header {
     border: none;
     padding: 10px 20px;
     cursor: pointer;
-    width: 100%;
 }
 
 .cart-container.open {
@@ -417,7 +430,6 @@ header {
     height: 100vh;
     background-color: #2B241F;
     padding: 20px;
-    flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 20px;
@@ -431,7 +443,6 @@ header {
 
 .home-reloj img {
     width: 70%;
-    height: auto;
     max-width: 1000px;
 }
 
@@ -542,11 +553,6 @@ button:hover {
 
 /*TERCERA PARTE*/
 
-.masData-index {
-    flex-wrap: wrap;
-    background-color: #F2ECE5;
-}
-
 [data-theme="dark"] .masData-index {
     background-color: #121212;
     color: white;
@@ -561,30 +567,25 @@ button:hover {
     .masData-index .intermedio-index {
         margin-top: 50px;
         width: 25%;
-        /* Cambia el ancho a 25% en pantallas más pequeñas */
     }
 }
 
 @media (max-width: 992px) {
     .masData-index .intermedio-index {
         width: 33.33%;
-        /* Cambia el ancho a 33.33% en pantallas más pequeñas */
     }
 }
 
 @media (max-width: 768px) {
     .masData-index .intermedio-index {
         width: 50%;
-        /* Cambia el ancho a 50% en pantallas más pequeñas */
     }
 }
 
 @media (max-width: 576px) {
     .masData-index .intermedio-index {
         width: 100%;
-        /* Cambia el ancho a 100% en pantallas más pequeñas */
         height: auto;
-        /* Deja que la altura se ajuste automáticamente */
     }
 }
 
@@ -609,20 +610,17 @@ button:hover {
 
 .li-iconos i:hover {
     color: #D1AE6A;
-    /* Color al pasar el mouse */
 }
 
 /*4 FOTOS BANNER*/
 
 .fotosBanner {
     gap: 0;
-    /* Eliminar el espacio entre los elementos */
 }
 
 .fotosBanner-item {
     position: relative;
     width: 25%;
-    /* Cuatro elementos por fila */
 }
 
 .fotosBanner-item img {
@@ -650,26 +648,22 @@ button:hover {
 @media (max-width: 1024px) {
     .fotosBanner-item {
         width: 50%;
-        /* Dos elementos por fila */
     }
 }
 
 @media (max-width: 768px) {
     .fotosBanner-item {
         width: 100%;
-        /* Un elemento por fila */
     }
 
     .fotosBanner-item .pos-absolute {
         font-size: 0.9em;
-        /* Ajustar el tamaño de fuente para pantallas más pequeñas */
     }
 }
 
 @media (max-width: 480px) {
     .fotosBanner-item .pos-absolute {
         font-size: 0.8em;
-        /* Ajustar el tamaño de fuente para pantallas más pequeñas */
     }
 }
 
@@ -690,7 +684,6 @@ button:hover {
 
 .play-icon:hover {
     background-color: rgba(0, 0, 0, 0.7);
-    /* Fondo más oscuro al pasar el mouse */
     transition: 0.7s;
 }
 
@@ -698,9 +691,7 @@ button:hover {
 
 /*GALERIAA*/
 .gallery {
-    flex-direction: column;
     align-items: center;
-    padding: 20px;
 }
 
 [data-theme="dark"] .gallery {
@@ -716,7 +707,6 @@ button:hover {
 
 [data-theme="dark"] h1 {
     color: #ffffff;
-    /* Color para el modo oscuro */
 }
 
 .gallery h3 {
@@ -831,11 +821,6 @@ button:hover {
     opacity: 1;
 }
 
-/*--------------------------------------*/
-.articulo img {
-    height: auto;
-}
-
 .articulo h3 {
     margin-top: 5px;
     margin-bottom: 0px;
@@ -864,7 +849,6 @@ button:hover {
     width: 35%;
     background-image: url(../images/banner30.jpg.webp);
     transform: translateX(-100%);
-    /* Mueve fuera de la pantalla desde la izquierda */
 }
 
 #banner70 {
@@ -890,30 +874,23 @@ button:hover {
 .in-view #banner70 {
     opacity: 1;
     transform: translateX(0);
-    /* Vuelve a su posición original */
 }
 
 @media (max-width: 768px) {
     .banner {
         flex-direction: column;
-        /* Cambia a columna en pantallas pequeñas */
     }
 
     #banner30,
     #banner70 {
         width: 100%;
-        /* Las secciones ocuparán el 100% del ancho */
         height: auto;
-        /* Permitir que la altura se ajuste automáticamente */
     }
 
     #banner70 div {
         margin-left: 0;
-        /* Elimina el margen izquierdo en pantallas pequeñas */
         width: auto;
-        /* Permite que el ancho se ajuste automáticamente */
         text-align: center;
-        /* Centra el texto en pantallas pequeñas */
     }
 }
 
@@ -931,21 +908,18 @@ button:hover {
 @media (max-width: 1024px) {
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
-        /* Tres columnas por fila */
     }
 }
 
 @media (max-width: 768px) {
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
-        /* Dos columnas por fila */
     }
 }
 
 @media (max-width: 480px) {
     .gallery-grid {
         grid-template-columns: 1fr;
-        /* Una columna por fila */
     }
 }
 
@@ -954,9 +928,6 @@ button:hover {
     background-position: center;
     background-repeat: no-repeat;
 }
-
-
-
 
 .gallery-4-cards h3 {
     margin: 30px;
@@ -971,15 +942,10 @@ button:hover {
     color: #666;
 }
 
-
-
 .product-image {
-    width: 100%;
-    height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
 }
-
 
 @media (max-width: 768px) {
     .gallery-grid {
@@ -1002,7 +968,6 @@ button:hover {
 }
 
 #off70 div {
-    flex-direction: column;
     justify-content: center;
     margin: 0 400px 0 20px;
 }
@@ -1015,53 +980,42 @@ button:hover {
 @media (max-width: 768px) {
     #off70 {
         height: 50vh;
-        /* Aumenta la altura en pantallas más pequeñas */
     }
 
     #off70 div {
         margin: 0 10px;
-        /* Reduce el margen lateral en pantallas pequeñas */
     }
 
     #off70 h2 {
         font-size: 1.5rem;
-        /* Ajusta el tamaño de la fuente */
     }
 
     #off70 p {
         font-size: 1rem;
-        /* Ajusta el tamaño de la fuente */
     }
 
     #off70 button {
         padding: 10px 20px;
-        /* Ajusta el padding del botón */
         font-size: 0.9rem;
-        /* Ajusta el tamaño de la fuente del botón */
     }
 }
 
 @media (max-width: 480px) {
     #off70 {
         height: 60vh;
-        /* Aumenta la altura en pantallas muy pequeñas */
     }
 
     #off70 h2 {
         font-size: 1.2rem;
-        /* Ajusta el tamaño de la fuente */
     }
 
     #off70 p {
         font-size: 0.9rem;
-        /* Ajusta el tamaño de la fuente */
     }
 
     #off70 button {
         padding: 8px 16px;
-        /* Ajusta el padding del botón */
         font-size: 1.2rem;
-        /* Ajusta el tamaño de la fuente del botón */
     }
 }
 
@@ -1073,13 +1027,6 @@ button:hover {
     border-radius: 3px;
     overflow: hidden;
     flex: 1 1 calc(25% - 25px);
-    /* Ajusta el ancho de los artículos */
-}
-
-.blog img {
-    height: auto;
-    width: 100%;
-    /* Asegura que la imagen ocupe todo el ancho del contenedor */
 }
 
 .blog img:hover {
@@ -1092,7 +1039,6 @@ button:hover {
     text-align: left;
     padding: 15px;
     margin: 15px;
-    /* Simplificado el margen */
 }
 
 .blog h3 {
@@ -1121,9 +1067,7 @@ button:hover {
     margin: 0 auto;
     padding: 20px 0;
     text-align: center;
-    /* Corregido aquí */
     gap: 25px;
-    /* Espacio entre los artículos */
 }
 
 @media (max-width: 1024px) {
@@ -1143,7 +1087,6 @@ button:hover {
 @media (max-width: 480px) {
     .blog {
         flex: 1 1 100%;
-        /* 1 artículo por fila en pantallas muy pequeñas */
     }
 }
 
@@ -1259,9 +1202,6 @@ footer ul {
 
 /*PAGINA 2*/
 
-
-
-
 .home-gallery {
     background: url(../assets/images/imagenesShop/watch-shop-header-bg.jpg) no-repeat center center;
     background-size: cover;
@@ -1271,14 +1211,9 @@ footer ul {
     /* Ajusta la altura al 100% del viewport */
 }
 
-.home-texto-comun {
-    flex-direction: column;
-}
-
 .home-texto-comun h2 {
     margin: 0px;
 }
-
 
 .breadcrumb {
     padding: 10px 20%;
@@ -1297,17 +1232,13 @@ footer ul {
     text-decoration: underline;
 }
 
-
-
 .container-shop {
     margin: 150px;
 }
 
 [data-theme="dark"] .container-shop {
     background-color: #1e1e1e;
-    /* Fondo oscuro */
     color: white;
-    /* Texto blanco */
 }
 
 .sidebar {
@@ -1317,16 +1248,12 @@ footer ul {
 
 [data-theme="dark"] .sidebar {
     background-color: #1e1e1e;
-    /* Fondo oscuro */
     color: white;
-    /* Texto blanco */
 }
 
 [data-theme="dark"] .sidebar h3 {
     background-color: #1e1e1e;
-    /* Fondo oscuro */
     color: white;
-    /* Texto blanco */
 }
 
 .min {
@@ -1341,13 +1268,11 @@ footer ul {
     cursor: pointer;
     font-size: 1.5rem;
     color: lightgray;
-    /* Default star color */
     transition: color 0.3s ease;
 }
 
 #starFilter span.selected {
     color: gold;
-    /* Highlighted star color */
 }
 
 .min-max span {
@@ -1414,9 +1339,7 @@ footer ul {
     font-weight: bold;
 }
 
-
 .items-container {
-    flex-direction: column;
     gap: 10px;
 }
 
@@ -1488,22 +1411,18 @@ ul li:nth-of-type(2) .custom-checkbox::before {
 
 ul li:nth-of-type(3) .custom-checkbox::before {
     background-color: #879977;
-    /* Cambia el color del círculo o cualquier otro estilo */
 }
 
 ul li:nth-of-type(4) .custom-checkbox::before {
     background-color: rgb(94, 119, 158);
-    /* Cambia el color del círculo o cualquier otro estilo */
 }
 
 ul li:nth-of-type(5) .custom-checkbox::before {
     background-color: #ADADAD;
-    /* Cambia el color del círculo o cualquier otro estilo */
 }
 
 ul li:nth-of-type(6) .custom-checkbox::before {
     background-color: #D1AE6A;
-    /* Cambia el color del círculo o cualquier otro estilo */
 }
 
 
@@ -1543,13 +1462,11 @@ ul li:nth-of-type(6) .custom-checkbox::before {
 
 .product-item img {
     max-width: 100%;
-    height: auto;
 }
 
 .sorting {
     align-items: center;
     margin-bottom: 20px;
-    flex-wrap: wrap;
 }
 
 .sorting select,
@@ -1559,7 +1476,6 @@ ul li:nth-of-type(6) .custom-checkbox::before {
 
 .sorting .left {
     gap: 10px;
-    flex-wrap: wrap;
 }
 
 .column-buttons {
@@ -1578,7 +1494,6 @@ ul li:nth-of-type(6) .custom-checkbox::before {
     display: none;
     padding: 10px;
     cursor: pointer;
-    position: fixed;
     top: 20px;
     left: 20px;
     z-index: 1001;
@@ -1611,13 +1526,13 @@ ul li:nth-of-type(6) .custom-checkbox::before {
     .content-shop-gallery {
         margin-left: 0;
         transition: margin-left 0.3s ease;
+        margin: -136px;
     }
 
     .content.shifted {
         margin-left: 300px;
     }
 }
-
 
 @media (max-width: 480px) {
     .product-grid {
@@ -1640,11 +1555,6 @@ ul li:nth-of-type(6) .custom-checkbox::before {
 
 /* Estilos principales para el contenedor de filtros y galería */
 
-
-/* Estilo de la galería de productos */
-
-
-
 .shop-gallery {
     width: 80%;
     margin-top: 7vh;
@@ -1657,13 +1567,7 @@ ul li:nth-of-type(6) .custom-checkbox::before {
 .producto img {
     max-width: 100%;
 }
-
-
-
 /*SHIPPING*/
-
-
-
 #home-shipping {
     background: url(../images/Shipping/watch-shipping-and-delivery-01.jpg) no-repeat center center;
     background-size: cover;
@@ -1683,23 +1587,17 @@ ul li:nth-of-type(6) .custom-checkbox::before {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.6);
-    /* Filtro negro con 50% de opacidad */
     z-index: 1;
 }
 
-/* Para asegurar que cualquier contenido dentro de .home-shipping esté sobre el filtro */
 .home-comun * {
     position: relative;
     z-index: 2;
 }
 
 .container-shipping {
-    flex-direction: row;
-    /* Colocar los elementos en fila */
     padding: 6rem;
     height: 75vh;
-    /* Cambia a auto para que se adapte al contenido */
-    /* Espaciado en todo el contenedor */
 }
 
 [data-theme="dark"]#Shipping-body {
@@ -1707,11 +1605,8 @@ ul li:nth-of-type(6) .custom-checkbox::before {
 }
 
 .image-section-shipping img {
-    max-width: 100%;
-    height: auto;
-    /* Mantiene la relación de aspecto */
+    width: 600px;
 }
-
 
 .text-section-shipping {
     flex: 1 1 300px;
@@ -1735,13 +1630,11 @@ ul li:nth-of-type(6) .custom-checkbox::before {
     margin-bottom: 1rem;
 }
 
-.text-section-shipping p{
+.text-section-shipping p {
     padding: 3px;
 }
 
 .features-shipping {
-    height: 100%;
-    flex-wrap: wrap;
     justify-content: center;
     padding: 50px 10% 50px 10%;
 }
@@ -1798,20 +1691,15 @@ ul li:nth-of-type(6) .custom-checkbox::before {
 }
 
 @media (max-width: 600px) {
-
-    /* Este tamaño puede ajustarse */
     .text-section-shipping h2 {
         font-size: 15px;
         text-align: center;
         line-height: 1.3;
-        /* Ajusta el interlineado */
         margin: 10px 0px 10px 0px;
         padding: 0 1em;
-        /* Añade padding para que no quede pegado a los bordes */
     }
 
 }
-
 
 [data-theme="dark"].container-shipping {
     background-color: #000;
@@ -1824,7 +1712,6 @@ ul li:nth-of-type(6) .custom-checkbox::before {
     background-size: cover;
     max-width: 100vw;
 }
-
 
 .store-locator-stores {
     grid-template-columns: 1fr 1fr;
@@ -1839,7 +1726,6 @@ ul li:nth-of-type(6) .custom-checkbox::before {
     position: relative;
     padding: 20px;
 }
-
 
 .left-number-locator {
     border-right: 1px solid #e0e0e0;
@@ -1872,25 +1758,19 @@ ul li:nth-of-type(6) .custom-checkbox::before {
 
 .store-locator-mapa {
     height: 70vh;
-    /* Ocupa la altura total de la pantalla */
     background-color: #f5f5f5;
     padding-top: 100px;
     max-width: 100vw;
 }
 
 .imagen-mapa-store-locator {
-    height: 100%;
     background: url(../images/Store-locator/watch-56.jpg) no-repeat center center;
     background-size: contain;
-    /* Ajusta la imagen para que se vea completa */
     justify-content: center;
     align-items: flex-end;
-    /* Coloca el texto en la parte inferior */
     color: white;
-    /* Asegura que el texto sea visible */
     padding: 10px;
     box-sizing: border-box;
-    /* Para que el padding no aumente el tamaño total */
 }
 
 .imagen-mapa-store-locator p {
@@ -1915,10 +1795,8 @@ ul li:nth-of-type(6) .custom-checkbox::before {
 
 .btn-store-locator:hover {
     background-color: #d4af37;
-    /* Color de fondo en hover */
     color: white;
 }
-
 
 
 [data-theme="dark"] .left-number-locator p,
@@ -1934,7 +1812,7 @@ ul li:nth-of-type(6) .custom-checkbox::before {
     gap: 15px;
     padding: 10px;
     max-width: 80%;
-    margin: 30px auto 60px auto;
+    margin: 30px auto 0px auto;
     background-color: #F5F5F5;
 }
 
@@ -1973,8 +1851,6 @@ ul li:nth-of-type(6) .custom-checkbox::before {
     margin: 5px 0;
 }
 
-
-/* Ajuste para pantallas más pequeñas */
 @media (max-width: 1024px) {
     .store-locator-stores {
         grid-template-columns: 1fr 1fr;
@@ -2013,14 +1889,11 @@ ul li:nth-of-type(6) .custom-checkbox::before {
     .right-text-locator {
         padding: 8px;
         text-align: left;
+        max-width: 100%;
     }
 
     .left-number-locator h1 {
         font-size: 2em;
-    }
-
-    .right-text-locator {
-        max-width: 100%;
     }
 }
 
@@ -2057,7 +1930,6 @@ ul li:nth-of-type(6) .custom-checkbox::before {
 @media (max-width: 600px) {
     .container-store-locator {
         grid-template-columns: 1fr;
-        /* Pasa a 1 columna en pantallas pequeñas */
     }
 }
 
@@ -2184,20 +2056,15 @@ ul li:nth-of-type(6) .custom-checkbox::before {
     max-width: 423px;
     height: 350px;
     overflow: hidden;
-    flex-direction: row;
 }
 
 .store-locator-store-card img {
-    width: 50%;
-    height: 100%;
     object-fit: cover;
 }
 
 .store-locator-store-card-content {
     padding: 20px;
-    width: 50%;
     justify-content: center;
-    flex-direction: column;
 }
 
 .sale-badge {
@@ -2330,6 +2197,7 @@ ul li:nth-of-type(6) .custom-checkbox::before {
 
     }
 }
+
 /*SHOP GALLERY*/
 .product-page {
     max-width: 1200px;
@@ -2472,19 +2340,14 @@ ul li:nth-of-type(6) .custom-checkbox::before {
 .left-column-product {
     width: 20%;
     padding-right: 20px;
-    flex-direction: column;
 }
 
 .left-column-product .thumbnail-images-product {
-    flex-direction: column;
     gap: 10px;
-    height: 100%;
-    /* Match the height of the right column */
 }
 
 .left-column-product .thumbnail-images-product img {
     height: calc(25% - 7.5px);
-    /* 25% of the height minus the gap */
     cursor: pointer;
 }
 
@@ -2495,14 +2358,12 @@ ul li:nth-of-type(6) .custom-checkbox::before {
 }
 
 .main-image-product {
-    height: 100%;
     margin-bottom: 20px;
 }
 
 .right-column-product {
     width: 40%;
     padding: 20px;
-    flex-direction: column;
 }
 
 .breadcrumb-product {
@@ -2674,11 +2535,11 @@ ul li:nth-of-type(6) .custom-checkbox::before {
         width: calc(25% - 5px);
     }
 }
+
 .main-imagen-product {
     max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
-    flex-direction: column;
 }
 
 .nav-imagen-product {
@@ -2698,11 +2559,6 @@ ul li:nth-of-type(6) .custom-checkbox::before {
 
 .nav-imagen-product a.active {
     border-bottom: 2px solid #000;
-}
-
-.content-imagen-product {
-    width: 100%;
-    flex-direction: column;
 }
 
 .text-content-imagen-product {
@@ -2746,7 +2602,6 @@ ul li:nth-of-type(6) .custom-checkbox::before {
 }
 
 table {
-    width: 100%;
     border-collapse: collapse;
     margin-top: 20px;
 }
@@ -2767,45 +2622,6 @@ th {
     background-color: #f2f2f2;
 }
 
-.accordion {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-.accordion-item {
-    border-bottom: 1px solid #ddd;
-}
-
-.accordion-item:last-child {
-    border-bottom: none;
-}
-
-.accordion-header {
-    background: none;
-    border: none;
-    font-size: 16px;
-    padding: 15px;
-    text-align: left;
-    width: 100%;
-    cursor: pointer;
-}
-
-.accordion-header:after {
-    content: '+';
-    float: right;
-}
-
-.accordion-content {
-    display: none;
-    padding: 15px;
-    background-color: #f9f9f9;
-    font-size: 14px;
-}
-
-.accordion-content p {
-    margin: 0;
-}
-
 @media (min-width: 768px) {
     .content-imagen-product {
         flex-direction: row;
@@ -2821,9 +2637,11 @@ th {
     background: url(../images/sizeGuide/homeFoto.jpg) no-repeat center center;
     background-size: cover;
 }
+
 .no-bullets {
     list-style: none;
 }
+
 /*tabla mujeres y esqueleto de la tabla*/
 .size-chart {
     width: 60%;
@@ -2889,9 +2707,7 @@ td {
 
 .section-men {
     background-color: #232323;
-    width: 100%;
     height: 800px;
-    flex-direction: column;
     align-items: center;
 }
 
@@ -3056,25 +2872,19 @@ td {
     position: relative;
     width: 25rem;
     height: 32rem;
-    flex-direction: column;
     justify-content: flex-end;
 }
 
 .card-image {
-    position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
     object-fit: cover;
     z-index: 1;
 }
 
 .card-info {
-    position: absolute;
     bottom: 0;
     right: 0;
-    flex-direction: column;
     align-items: flex-start;
     padding: 1.25rem;
     width: 68%;
@@ -3103,7 +2913,7 @@ td {
     padding-bottom: 40px;
 }
 
-address {
+.address {
     font-style: normal;
     font-size: 0.875rem;
     color: #333;
@@ -3171,7 +2981,6 @@ address {
 #white-section-div {
     justify-content: center;
     margin-top: 20px;
-    width: 100%;
 }
 
 .white-section {
@@ -3186,7 +2995,6 @@ ul {
     margin: 0;
     padding: 0;
 }
-
 
 .parent-2 {
     display: grid;
@@ -3216,13 +3024,8 @@ ul {
     color: #ffffff;
 }
 
-.contact-form {
-    flex-direction: column;
-}
-
 .input-contact {
     margin-bottom: 1rem;
-    flex-direction: column;
 }
 
 .input-contact label {
@@ -3244,6 +3047,7 @@ ul {
 .input-contact input:focus {
     border-bottom: 1px solid #ffffff;
 }
+
 .masData-contact {
     padding: 2rem 5rem;
     margin: 0 auto;
@@ -3266,8 +3070,6 @@ ul {
     color: #ffffff;
     border: 2px solid #ffffff;
 }
-
-/*Medidas de pantalla: 1920x1080 y */
 
 @media (min-width: 1920px) {
 
@@ -3385,13 +3187,11 @@ ul {
     }
 }
 
-
 body {
     background-color: var(--bg-color);
     color: var(--text-color);
     transition: background-color 0.3s, color 0.3s;
 }
-
 
 .dark-mode-toggle {
     background: none;
@@ -3419,7 +3219,6 @@ body {
     font-size: 1.5rem;
     height: 50px;
     width: 50px;
-    position: fixed;
     bottom: 20px;
     left: 20px;
     background-color: black;
@@ -3439,13 +3238,11 @@ body {
     transform: scale(0.9);
 }
 
-/* Estilos para el icono dentro del botón */
 .dark-mode-toggle i {
     transition: color 0.3s;
 }
 
 [data-theme="dark"] .dark-mode-toggle {
-
     color: black;
 }
 
@@ -3540,17 +3337,3 @@ body {
     grid-column: span 2;
 }
 
-
-[data-theme="dark"].nav-imagen-product a {
-    color: white;
-}
-
-
-[data-theme="dark"] #body-watch-product a {
-    color: white;
-}
-
-.ul-navbar .li-navbar a.active {
-    color: #D1AE6A;
-    /* Cambia el color según tu preferencia */
-}

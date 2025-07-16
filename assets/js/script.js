@@ -79,7 +79,7 @@ function actualizarCarrusel() {
 
     const homeHTML = `
         <article class="home-reloj">
-            <img src="${item.imagen}" alt="Reloj${currentCarruselIndex + 1}">
+            <img src="${item.imagen}" alt="Reloj${currentCarruselIndex + 1} class=" h-auto">
         </article>
         <article class="home-content">
             <h1 class="niveau color-dorado">LES ORIGINALES</h1>
@@ -112,7 +112,7 @@ const sizes = ["39MM", "40MM", "41MM", "42MM", "45MM"];
 // Array de productos para la galeria!!!
 const productos = [
     { nombre: "Chrono Camuflado Black", imagen: "./assets/images/GalleryImagenes/RelojGallery2.0.webp", imagenHover: "./assets/images/GalleryImagenes/RelojGallery2.jpg", precio: 1500, color: "black", stars: 5, size: "39MM" },
-    { nombre: "Chrono Black", imagen: "./assets/images/GalleryImagenes/RelojGallery1.0.webp", imagenHover: "./assets/images/GalleryImagenes/RelojGallery1.webp", precio: 2000, color: "black", stars: 4, size: "40MM" },
+    { nombre: "Chrono Black", imagen: "./assets/images/GalleryImagenes/RelojGallery1.0.webp", imagenHover: "./assets/images/GalleryImagenes/RelojGallery1.jpg", precio: 2000, color: "black", stars: 4, size: "40MM" },
     { nombre: "Chrono Rose Gold", imagen: "./assets/images/GalleryImagenes/RelojGallery3.0.jpg", imagenHover: "./assets/images/GalleryImagenes/RelojGallery3.jpg", precio: 4500, color: "rosegold", stars: 5, size: "41MM" },
     { nombre: "Gunmetal Black Tan", imagen: "./assets/images/GalleryImagenes/RelojGallery4.0.webp", imagenHover: "./assets/images/GalleryImagenes/RelojGallery4.webp", precio: 1800, color: "golden", stars: 3, size: "42MM" },
     { nombre: "Leather Gray Belt", imagen: "./assets/images/GalleryImagenes/RelojGallery5.0.jpg", imagenHover: "./assets/images/GalleryImagenes/RelojGallery5.jpg", precio: 2000, color: "silver", stars: 2, size: "45MM" },
@@ -126,19 +126,37 @@ const productos = [
 ];
 
 
+const productosHome = [
+    { nombre: "Chrono Camuflado Black", imagen: "./assets/images/GalleryImagenes/RelojGallery1.0.webp", imagenHover: "./assets/images/GalleryImagenes/RelojGallery1.jpg", precio: 1500, color: "black", stars: 5, size: "39MM" },
+    { nombre: "Chrono Camuflado Black", imagen: "./assets/images/GalleryImagenes/RelojGallery1.0.webp", imagenHover: "./assets/images/GalleryImagenes/RelojGallery1.jpg", precio: 1500, color: "black", stars: 5, size: "39MM" },
+    { nombre: "Chrono Camuflado Black", imagen: "./assets/images/GalleryImagenes/RelojGallery1.0.webp", imagenHover: "./assets/images/GalleryImagenes/RelojGallery1.jpg", precio: 1500, color: "black", stars: 5, size: "39MM" },
+    { nombre: "Chrono Camuflado Black", imagen: "./assets/images/GalleryImagenes/RelojGallery1.0.webp", imagenHover: "./assets/images/GalleryImagenes/RelojGallery1.jpg", precio: 1500, color: "black", stars: 5, size: "39MM" },
+    { nombre: "Chrono Camuflado Black", imagen: "./assets/images/GalleryImagenes/RelojGallery1.0.webp", imagenHover: "./assets/images/GalleryImagenes/RelojGallery1.jpg", precio: 1500, color: "black", stars: 5, size: "39MM" },
+    { nombre: "Chrono Camuflado Black", imagen: "./assets/images/GalleryImagenes/RelojGallery1.0.webp", imagenHover: "./assets/images/GalleryImagenes/RelojGallery1.jpg", precio: 1500, color: "black", stars: 5, size: "39MM" },
+    { nombre: "Chrono Camuflado Black", imagen: "./assets/images/GalleryImagenes/RelojGallery1.0.webp", imagenHover: "./assets/images/GalleryImagenes/RelojGallery1.jpg", precio: 1500, color: "black", stars: 5, size: "39MM" },
+    { nombre: "Chrono Camuflado Black", imagen: "./assets/images/GalleryImagenes/RelojGallery1.0.webp", imagenHover: "./assets/images/GalleryImagenes/RelojGallery1.jpg", precio: 1500, color: "black", stars: 5, size: "39MM" },
+    { nombre: "Chrono Camuflado Black", imagen: "./assets/images/GalleryImagenes/RelojGallery1.0.webp", imagenHover: "./assets/images/GalleryImagenes/RelojGallery1.jpg", precio: 1500, color: "black", stars: 5, size: "39MM" },
+    { nombre: "Chrono Camuflado Black", imagen: "./assets/images/GalleryImagenes/RelojGallery1.0.webp", imagenHover: "./assets/images/GalleryImagenes/RelojGallery1.jpg", precio: 1500, color: "black", stars: 5, size: "39MM" },
+    { nombre: "Chrono Camuflado Black", imagen: "./assets/images/GalleryImagenes/RelojGallery1.0.webp", imagenHover: "./assets/images/GalleryImagenes/RelojGallery1.jpg", precio: 1500, color: "black", stars: 5, size: "39MM" },
+    { nombre: "Chrono Camuflado Black", imagen: "./assets/images/GalleryImagenes/RelojGallery1.0.webp", imagenHover: "./assets/images/GalleryImagenes/RelojGallery1.jpg", precio: 1500, color: "black", stars: 5, size: "39MM" },
+    { nombre: "Chrono Camuflado Black", imagen: "./assets/images/GalleryImagenes/RelojGallery1.0.webp", imagenHover: "./assets/images/GalleryImagenes/RelojGallery1.jpg", precio: 1500, color: "black", stars: 5, size: "39MM" },
+    { nombre: "Chrono Camuflado Black", imagen: "./assets/images/GalleryImagenes/RelojGallery1.0.webp", imagenHover: "./assets/images/GalleryImagenes/RelojGallery1.jpg", precio: 1500, color: "black", stars: 5, size: "39MM" },
+    { nombre: "Chrono Camuflado Black", imagen: "./assets/images/GalleryImagenes/RelojGallery1.0.webp", imagenHover: "./assets/images/GalleryImagenes/RelojGallery1.jpg", precio: 1500, color: "black", stars: 5, size: "39MM" },
+]
+
 // Selecciona el contenedor de la galería
 function cargarGaleriaDeFotos() {
     const contenedorGallery = document.querySelector('.contenedor-gallery');
     if (contenedorGallery) {
-        productos.forEach(producto => {
+        productosHome.forEach(producto => {
             const articulo = document.createElement('article');
             articulo.classList.add('articulo', 'gallery-item'); // Agregar clase específica para la galería
             articulo.innerHTML = `
-                <img src="${producto.imagen}" class="w100 product-image" alt="${producto.nombre}">
+                <img src="${producto.imagen}" class="w100 h-auto product-image" alt="${producto.nombre}">
                 <h3 class="myriad rem1">${producto.nombre}</h3>
                 <p class="flex-center myriad rem1 color-gris">$${producto.precio}</p>
                 <p class="flex-center myriad rem1 color-gris">Size: ${producto.size}</p>
-                <div class="add-text"><button onclick="carrito(${productos.indexOf(producto)})" class = "addcart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button></div>
+                <div class="add-text"><button onclick="carrito(${productosHome.indexOf(producto)})" class = "addcart"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button></div>
             `;
             contenedorGallery.appendChild(articulo);
 
@@ -264,7 +282,7 @@ function mostrarProductos(colorSeleccionado = null, minPrice = 0, maxPrice = 700
             articulo.classList.add('product-item');
 
             articulo.innerHTML = `
-                <img src="${producto.imagen}" alt="${producto.nombre}" class="product-image">                        
+                <img src="${producto.imagen}" alt="${producto.nombre}" class="product-image h-auto">                        
                 <h4 class="myriad em08">${producto.nombre}</h4>
                 <div class="product-price myriad em08 color-gris">
                     $${producto.precio}

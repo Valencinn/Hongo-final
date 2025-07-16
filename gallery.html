@@ -21,7 +21,7 @@
 </head>
 
 <body class="mar-pad0">
-    <header class="display-flex spc-btw navbar w100 items-center">
+    <header class="display-flex spc-btw navbar w100 items-center ps-fixed">
         <img class="logo" src="./assets/images/logo.png" alt="logo">
         <nav class="display-flex spc-btw items-center ">
             <ul class="ul-navbar display-flex mar-pad0">
@@ -46,7 +46,7 @@
             <li class="fas li-iconos"><i class="fa-regular fa-user color-white"></i></li>
             <li class="fas li-iconos"><i class="fa-regular fa-heart color-white"></i></li>
             <li class="fas li-iconos"><i class="fa-solid fa-cart-shopping color-white"></i></li>
-            <li><button onclick="toggleDarkMode()" class="dark-mode-toggle">
+            <li><button onclick="toggleDarkMode()" class="dark-mode-toggle ps-fixed">
                     <i class="fa-solid fa-moon"></i>
                 </button></li>
         </ul>
@@ -56,7 +56,7 @@
     </header>
 
     <section class="home-comun display-flex flex-center w100 pos-relative" id="home-store-locator">
-        <div class="home-texto-comun flex-center display-flex">
+        <div class="home-texto-comun flex-center display-flex fl-column">
             <h2 class="niveau em2 color-white gallery-text">Shop Classic</h2>
             <p class="niveau em1 color-gris gallery-text">we provide latest fashion trends</p>
         </div>
@@ -68,7 +68,7 @@
         <a href="#" class="niveau">Shop classic</a>
     </div>
 
-    <div class="filter-toggle" onclick="toggleSidebar()"><i class="fa-solid fa-bars"></i></div>
+    <div class="filter-toggle ps-fixed" onclick="toggleSidebar()"><i class="fa-solid fa-bars"></i></div>
 
     <section class="container-shop display-flex fl-wrap bk-white">
         <article class="sidebar" id="sidebar">
@@ -136,7 +136,7 @@
                 </div>
             </div>
 
-            <div class="items-container display-flex">
+            <div class="items-container display-flex fl-column">
                 <div class="item" data-stars="5">
                     <span class="item-title">Item 1</span> - ★★★★★
                 </div>
@@ -156,8 +156,8 @@
         </article>
 
         <article class="content-shop-gallery">
-            <div class="sorting display-flex spc-btw">
-                <div class="left display-flex">
+            <div class="sorting display-flex spc-btw fl-wrap">
+                <div class="left display-flex fl-wrap">
                     <div class="column-buttons display-flex">
                         <button onclick="changeColumns(2)">2</button>
                         <button onclick="changeColumns(3)">3</button>
