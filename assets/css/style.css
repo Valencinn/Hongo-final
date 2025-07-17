@@ -63,6 +63,7 @@
 .color-black {
     color: var(--color-black);
 }
+
 /*---------------------POSICION---------------------*/
 .flex-center {
     justify-content: center;
@@ -89,9 +90,10 @@
 .items-center {
     align-items: center;
 }
+
 /*---------------------TAMAÑOS---------------------*/
 .w100 {
-    width: 100%; 
+    width: 100%;
 }
 
 .w50 {
@@ -106,9 +108,10 @@
     height: 100vh;
 }
 
-.h-auto{
+.h-auto {
     height: auto;
 }
+
 /*---------------------TIPOGRAFIAS---------------------*/
 .niveau {
     font-family: "niveau-grotesk", sans-serif;
@@ -119,6 +122,7 @@
     font-family: "myriad-pro", sans-serif;
     font-style: normal;
 }
+
 /*---------------------TAMAÑO LETRAS---------------------*/
 
 .rem1 {
@@ -168,15 +172,15 @@
     position: relative;
 }
 
-.pad100{
+.pad100 {
     padding: 100px;
 }
 
-.fl-column{
+.fl-column {
     flex-direction: column;
 }
 
-.fl-row{
+.fl-row {
     flex-direction: row;
 }
 
@@ -187,6 +191,7 @@
 .ps-absolute {
     position: absolute;
 }
+
 /*---------------------ESTILOS GENERALES---------------------*/
 :root {
     --text-color: #232323;
@@ -565,7 +570,7 @@ button:hover {
 
 @media (max-width: 1200px) {
     .masData-index .intermedio-index {
-        margin-top: 50px;
+        margin: 20px;
         width: 25%;
     }
 }
@@ -692,6 +697,7 @@ button:hover {
 /*GALERIAA*/
 .gallery {
     align-items: center;
+    margin: 40px;
 }
 
 [data-theme="dark"] .gallery {
@@ -884,7 +890,7 @@ button:hover {
     #banner30,
     #banner70 {
         width: 100%;
-        height: auto;
+        height: 30vh;
     }
 
     #banner70 div {
@@ -908,18 +914,21 @@ button:hover {
 @media (max-width: 1024px) {
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
+        margin: 20px;
     }
 }
 
 @media (max-width: 768px) {
     .gallery-grid {
         grid-template-columns: repeat(2, 1fr);
+        margin: 20px;
     }
 }
 
 @media (max-width: 480px) {
     .gallery-grid {
         grid-template-columns: 1fr;
+        margin: 20px;
     }
 }
 
@@ -1567,6 +1576,7 @@ ul li:nth-of-type(6) .custom-checkbox::before {
 .producto img {
     max-width: 100%;
 }
+
 /*SHIPPING*/
 #home-shipping {
     background: url(../images/Shipping/watch-shipping-and-delivery-01.jpg) no-repeat center center;
@@ -1864,17 +1874,21 @@ ul li:nth-of-type(6) .custom-checkbox::before {
     }
 
     .left-number-locator h1 {
-        font-size: 3em;
+        font-size: 2em;
     }
 
     .left-number-locator p,
     .right-text-locator p {
-        font-size: 1.1em;
+        font-size: 1em;
     }
 
     .right-text-locator {
         width: 100%;
         max-width: 400px;
+    }
+
+    .container-store-locator {
+        grid-template-columns: repeat(2, 1fr);
     }
 }
 
@@ -1893,43 +1907,40 @@ ul li:nth-of-type(6) .custom-checkbox::before {
     }
 
     .left-number-locator h1 {
-        font-size: 2em;
+        font-size: 1.5em;
+    }
+
+    .left-number-locator p {
+        font-size: 0.8em;
+    }
+
+    .container-store-locator {
+        grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 768px) {
-    .store-locator-stores {
-        grid-template-columns: 1fr;
-        padding: 0 5%;
-    }
-
-    .left-number-locator {
-        border-right: none;
-        border-bottom: 1px solid #e0e0e0;
-        margin: 0;
-        text-align: center;
-    }
-
     .left-number-locator h1 {
-        font-size: 48px;
+        font-size: 2em;
+        text-align: center;
+        margin: 0 auto;
     }
 
     .left-number-locator p {
-        font-size: 12px;
-    }
-
-    .right-text-locator {
-        width: 100%;
-        font-size: 14px;
+        font-size: 1em;
         text-align: center;
-        justify-content: center;
-        align-items: center;
+        margin: 0 auto;
     }
 }
 
-@media (max-width: 600px) {
-    .container-store-locator {
-        grid-template-columns: 1fr;
+/* For even smaller screens */
+@media (max-width: 480px) {
+    .left-number-locator h1 {
+        font-size: 1.2em;
+    }
+
+    .left-number-locator p {
+        font-size: 0.9em;
     }
 }
 
@@ -2847,7 +2858,7 @@ td {
     padding: 1rem;
     transition: border 0.3s smooth;
     border: 3px solid white;
-    margin: 0 2rem;
+    margin: 0;
 }
 
 [data-theme="dark"].intermedio {
@@ -3336,4 +3347,3 @@ body {
 .gallery-grid .div4 {
     grid-column: span 2;
 }
-
